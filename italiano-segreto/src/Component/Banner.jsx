@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Banner (){
+export default function Banner ({text}){
     return(
         <div class="banniere">
-            <p>Benvenuto</p>
+            <p>{text}</p>
         </div>
     )
 }

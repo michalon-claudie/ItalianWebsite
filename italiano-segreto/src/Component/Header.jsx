@@ -1,6 +1,7 @@
 import React from 'react'
 import imgFB from '../Images/imgFB.png'
 import insta from '../Images/insta.png'
+import '../Style/Header.scss'
 
 export default function Header() {
     return (
