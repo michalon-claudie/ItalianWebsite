@@ -1,33 +1,44 @@
-.reseaux
-{
-    display:block;
-
-}
-.titre-principal
-{
-    display:block;
-}
-.mail a
-{
-    display:block;
-    color:#e0b4e0;
-    font-weight:bold;
-    border:solid 2px #ccf2ff;
-    border-radius:10px;
-    box-shadow: 1px 1px 10px rgba(204, 242, 255, 0.7);
-    padding:17px;
-    font-size: 17px;
-}
-.mail a:hover
-{
-    color:black;
-}
 .entete
 {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 20px;
-    margin-right:20px;
-    margin-top: 10px;
+    align-items: center;
+    margin:20px;
+    .reseaux
+    {
+        display: flex;
+        gap:1%;
+        img{
+            width:4%;
+        }
+    }
+    .mail{
+        a
+        {
+        display:block;
+        color:#e0b4e0;
+        font-weight:bold;
+        border:solid 2px #ccf2ff;
+        border-radius:10px;
+        box-shadow: 1px 1px 10px rgba(204, 242, 255, 0.7);
+        padding:17px;
+        font-size: 17px;
+        &:hover
+        {
+            color:black;
+        }
+        }
+}
+}
+h1
+{
+    color :#e0b4e0 ;
+    font-size:50px;
+    text-align:center;
+    font-style:italic;
+    text-shadow:3px 3px 0px rgba(234, 192, 230, 0.3);
+    margin : 20px 0px;
+    padding:20px;
+    font-family: 'Parisienne', cursive;
 }

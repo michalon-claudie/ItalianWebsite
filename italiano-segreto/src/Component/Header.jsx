@@ -1,13 +1,13 @@
 import React from 'react'
-import imgFB from '../Images/imgFB.png'
-import insta from '../Images/insta.png'
+import imgFB from '../Images/fb.jpg'
+import insta from '../Images/insta.webp'
 import '../Style/Header.scss'
 
 export default function Header() {
     return (
         <header>
             <div className='entete'>
-                <div class="reseaux">
+                <div className="reseaux">
                     <img src={imgFB} alt='Facebook'/>
                     <img src={insta} alt='instagram'/>
                 </div>
@@ -15,9 +15,7 @@ export default function Header() {
                     <a href="MAILTO:clodiedie@hotmail.fr">Scrivimi</a>
                 </div>
             </div>
-            <div className="titre-principal">
-                <h1><a href="Italie.html">L'italiano segreto</a></h1>
-            </div>
+            <h1><a href="Italie.html">L'italiano segreto</a></h1>
     </header>
     )
 }
