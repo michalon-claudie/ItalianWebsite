@@ -20,47 +20,7 @@
     font-size:30px;
 }
 
-.navig
-{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60px 60px;
-    gap:5px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.navig a
-{
-    color:rgb(121, 121, 218);;
-}
-.titre
-{
-    border-bottom: solid 3px #ccf2ff;
-    border-radius: 10px;
-    box-shadow: 6px 6px 15px rgba(204, 242, 255, 0.3);
-    text-align: center;
-    padding:20px;
-}
-.titredessous1,.titredessous2,.titredessous3
-{
-    border-bottom: solid 3px #ccf2ff;
-    border-radius: 10px;
-    box-shadow: 6px 6px 15px rgba(204, 242, 255, 0.3);
-    text-align: center;
-    padding:20px;
-}
-.titredessous1
-{
-    grid-column: 1/2;
-}
-.titredessous2
-{
-    grid-column:2/3;
-}
-.titredessous3
-{
-    grid-column:3/4;
-}
+
 body
 {
     background-color: white;

@@ -1,0 +1,26 @@
+.navigation
+{
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    &.visible {
+        opacity: 1;
+    }
+    display:flex;
+    flex-wrap: wrap;
+    gap:5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .nav-item 
+    {
+        border-bottom: solid 3px #ccf2ff;
+        border-radius: 10px;
+        box-shadow: 6px 6px 15px rgba(204, 242, 255, 0.3);
+        text-align: center;
+        padding:20px;
+        color:rgb(121, 121, 218);
+        &:hover{
+            border-left: black 5px;
+            border-bottom: black 5px;
+        }
+    }
+}
