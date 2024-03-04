@@ -32,10 +32,10 @@ export default function Navigation() {
     }, []);
     return (
         <nav className={`navigation ${isVisible ? 'visible' : ''}`}>
-            <NavItem href="../Pages/Italiano.jsx" label="Home" />
+            <NavItem href="/" label="Home" />
             <NavItem href="lamiastoria.html" label="La mia storia" />
             <NavItem href="Torino.html" label="Torino" />
-            <NavItem href="Firenze.html" label="Firenze" />
+            <NavItem href="/Firenze" label="Firenze" />
             <NavItem href="Sicilia.html" label="La Sicilia" />
             <NavItem href="Ricetta.html" label="Ricette" />
             <NavItem href="Toscana.html" label="Toscana" />
