@@ -1,15 +1,13 @@
 import React from 'react'
 import '../Style/Footer.scss'
+import SocialM from '../Component/SocialM'
 
 export default function Footer(){
     return(
     <footer>
         <div className="footer_block">
             <h2 className="titre-reseaux">Réseaux Sociaux</h2>
-                <a target="_blank" href="https://www.instagram.com/">Instagram</a>
-                <a target="_blank" href="https://www.facebook.com/">Facebook</a>
-                <a target="_blank" href="https://www.twitter.com/">Twitter</a>
-                <a target="_blank" href="https://www.linkedin.com/">Linkedin</a>
+            <SocialM/>
         </div>
         <div className="footer_block">
             <h2 className="titre-monsite">Mon site</h2>

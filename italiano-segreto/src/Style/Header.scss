@@ -1,4 +1,4 @@
-.entete
+.contact
 {
     display:flex;
     flex-direction: row;
@@ -12,13 +12,16 @@
         @media screen and (min-width:200px) and (max-width:500px) {
             gap:5%;
         }
-        img{
+        a{
             width:4%;
             @media screen and (min-width:500px) and (max-width:780px) {
                 width:7%;
             }
             @media screen and (min-width:200px) and (max-width:500px) {
                 width:15%;
+            }
+            img{
+                width:100%;
             }
         }
     }
