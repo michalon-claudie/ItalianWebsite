@@ -27,7 +27,7 @@ export default function Navigation() {
         };
 
         window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Appel initial pour déterminer la visibilité au chargement de la page
+        handleScroll();
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
     return (
