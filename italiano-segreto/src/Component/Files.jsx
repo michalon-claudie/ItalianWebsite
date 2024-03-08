@@ -10,6 +10,7 @@ export default function Files(){
                     <div key={completeFiles.id} className='goToFiles'>
                         <Link to={`/${completeFiles.title}`}>
                             <img src={completeFiles.cover} alt={completeFiles.title}/>
+                            <span className='fileTitle'>{completeFiles.title}</span>
                         </Link>
                     </div>
                 ))}
