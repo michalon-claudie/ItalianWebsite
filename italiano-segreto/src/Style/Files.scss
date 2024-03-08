@@ -1,10 +1,16 @@
 .FilesContainer{
     display: flex;
     flex-wrap: wrap;
-    .files{
-        width:25%;
-    }
-    img{
-        width:200px;
+    gap:30px;
+    justify-content: center;
+    .goToFiles{
+        width:30%;
+        a{
+            width:100%;
+            display: flex;
+            img{
+                width:100%;
+            }
+        }
     }
 }
