@@ -10,28 +10,9 @@ function NavItem({ href, label }) {
 }
 
 export default function Navigation() {
-    const [isVisible, setIsVisible] = useState(false);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const nav = document.querySelector('.navigation');
-            if (nav) {
-                const navTop = nav.offsetTop;
-                const windowHeight = window.innerHeight;
-                if (window.pageYOffset > navTop - windowHeight + 400) {
-                    setIsVisible(false);
-                } else {
-                    setIsVisible(true);
-                }
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        handleScroll();
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
     return (
-        <nav className={`navigation ${isVisible ? 'visible' : ''}`}>
+        <nav className="navigation" >
             <NavItem href="/" label="Home" />
             <NavItem href="lamiastoria.html" label="La mia storia" />
             <NavItem href="Torino.html" label="Torino" />

@@ -4,6 +4,7 @@ import Header from '../Component/Header'
 import Banner from '../Component/Banner'
 import Naviguation from '../Component/Naviguation'
 import About from '../Component/About'
+import Files from '../Component/Files'
 import Footer from '../Component/Footer'
 
 export default function Italiano() {
@@ -23,6 +24,7 @@ export default function Italiano() {
                  Votre œil est neuf et votre esprit doit être vif pour apprendre, découvrir, s'émerveiller et rencontrer.
                   Mais assez parlé de moi, je vous laisse découvrir le site et les informations qui vous intéressent sur le pays."
             />
+            <Files/>
             <Banner text="MICHALON Claudie copyright 2024"/>
             <Footer/>
         </main>

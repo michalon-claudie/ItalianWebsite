@@ -1,0 +1,29 @@
+[
+    {
+        "id": "0",
+        "title": "Firenze",
+        "date": "Mars 2024",
+        "description": "Bienvenue à Florence.",
+        "img": "./firenze.webp",
+        "cover":"./firenze.webp",
+        "link": "https://michalon-claudie.github.io/BOOKI/"
+    },
+    {
+        "id": "1",
+        "title": "Firenze",
+        "date": "Mars 2024",
+        "description": "Bienvenue à Florence.",
+        "img": "./firenze.webp",
+        "cover":"./firenze.webp",
+        "link": "https://michalon-claudie.github.io/BOOKI/"
+    },
+    {
+        "id": "2",
+        "title": "Firenze",
+        "date": "Mars 2024",
+        "description": "Bienvenue à Florence.",
+        "img": "./firenze.webp",
+        "cover":"./firenze.webp",
+        "link": "https://michalon-claudie.github.io/BOOKI/"
+    }
+]

@@ -1,0 +1,10 @@
+.FilesContainer{
+    display: flex;
+    flex-wrap: wrap;
+    .files{
+        width:25%;
+    }
+    img{
+        width:200px;
+    }
+}
