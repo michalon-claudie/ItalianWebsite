@@ -5,25 +5,22 @@
         "date": "Mars 2024",
         "description": "Bienvenue à Florence.",
         "img": "./firenze.webp",
-        "cover":"./firenze.webp",
-        "link": "https://michalon-claudie.github.io/BOOKI/"
+        "cover":"./firenze.webp"
     },
     {
         "id": "1",
-        "title": "Firenze",
+        "title": "Pistoia",
         "date": "Mars 2024",
-        "description": "Bienvenue à Florence.",
-        "img": "./firenze.webp",
-        "cover":"./firenze.webp",
-        "link": "https://michalon-claudie.github.io/BOOKI/"
+        "description": "Découvrons ensemble Pistoia.",
+        "img": "./pistoia.webp",
+        "cover":"./pistoia.webp"
     },
     {
         "id": "2",
-        "title": "Firenze",
+        "title": "Cinque Terre",
         "date": "Mars 2024",
-        "description": "Bienvenue à Florence.",
-        "img": "./firenze.webp",
-        "cover":"./firenze.webp",
-        "link": "https://michalon-claudie.github.io/BOOKI/"
+        "description": "5 villages au coeur de la Toscane.",
+        "img": "./cinqueterre.webp",
+        "cover":"./cinqueterre.webp"
     }
 ]

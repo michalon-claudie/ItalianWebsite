@@ -3,6 +3,7 @@ import '../Style/style.css'
 import Header from '../Component/Header'
 import Banner from '../Component/Banner'
 import Naviguation from '../Component/Naviguation'
+import Files from '../Component/Files'
 import Footer from '../Component/Footer'
 
 export default function Firenze() {
@@ -11,6 +12,7 @@ export default function Firenze() {
             <Header/>
             <Banner text="Firenze"/>
             <Naviguation/>
+            <Files/>
             <Footer/>
         </main>
     )
