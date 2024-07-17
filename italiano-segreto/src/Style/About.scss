@@ -4,11 +4,12 @@
     align-items: center;
     .para 
     {
-        width:50%;
+        width:70%;
         border-bottom: 1px solid transparent;
         border-left:1px solid transparent;
-        padding: 50px;
+        padding: 20px;
         font-size:20px;
+        margin-top:0px;
         &.visible{
             animation: animate 5s ease forwards;
         }
@@ -17,6 +18,8 @@
     {
         padding:20px;
         font-size:30px;
+        margin-top:50px;
+        margin-bottom:0px;
     }
 }
 

@@ -2,7 +2,7 @@
 {
     display:flex;
     flex-wrap: wrap;
-    gap:5px;
+    gap:20px;
     margin-top: 30px;
     margin-bottom: 30px;
     .nav-item 
@@ -11,7 +11,7 @@
         border-radius: 10px;
         box-shadow: 6px 6px 15px rgba(204, 242, 255, 0.3);
         text-align: center;
-        padding:20px;
+        padding:10px;
         color:rgb(121, 121, 218);
         &:hover{
             border-left: black 5px;
