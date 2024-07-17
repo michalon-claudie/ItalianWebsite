@@ -17,7 +17,6 @@ export default function Navigation() {
             <NavItem href="lamiastoria.html" label="La mia storia" />
             <NavItem href="/Firenze" label="Firenze" />
             <NavItem href="Ricetta.html" label="Ricette" />
-            <NavItem href="Imparare.html" label="Imparare l'Italiano" />
             <NavItem href="Contact.html" label="Contact" />
         </nav>
     );
