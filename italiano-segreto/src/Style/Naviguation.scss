@@ -1,8 +1,11 @@
 .navigation
 {
     display:flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     gap:20px;
+    padding:10px;
     margin-top: 30px;
     margin-bottom: 30px;
     .nav-item 
@@ -11,8 +14,11 @@
         border-radius: 10px;
         box-shadow: 6px 6px 15px rgba(204, 242, 255, 0.3);
         text-align: center;
-        padding:10px;
+        padding:15px;
         color:rgb(121, 121, 218);
+        a{
+            font-size:20px;
+        }
         &:hover{
             border-left: black 5px;
             border-bottom: black 5px;

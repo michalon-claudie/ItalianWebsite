@@ -24,7 +24,7 @@ export default function About({title,content}){
     }, []);
 
     return(
-    <div className='about'>
+    <div className='about' id="about">
         <h2 className="about_title">{title}</h2>
         <p className={`para ${isVisible ? 'visible' : ''}`}>{content}</p>
     </div>
