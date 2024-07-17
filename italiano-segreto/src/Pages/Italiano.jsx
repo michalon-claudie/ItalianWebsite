@@ -11,8 +11,8 @@ export default function Italiano() {
     return (
         <main>
             <Header/>
-            <Banner text="Benvenuto"/>
             <Naviguation/>
+            <Banner text="Benvenuto"/>
             <About
                 title="Pourquoi ce site ?"
                 content="Amoureuse de l'Italie depuis toujours, 
