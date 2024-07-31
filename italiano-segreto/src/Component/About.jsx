@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import '../Style/About.scss'
 
 export default function About({title,content}){
     const [isVisible, setIsVisible] = useState(false);
@@ -8,15 +7,13 @@ export default function About({title,content}){
         const handleScroll = () => {
             const para = document.querySelector('.para');
             if (para) {
-                const paraTop = para.offsetTop;
-                const windowHeight = window.innerHeight;
-                if (window.pageYOffset > paraTop - windowHeight + 400) {
-                    setIsVisible(true);
-                } else {
-                    setIsVisible(false);
-                }
+              const paraTop = para.getBoundingClientRect().top;
+              const windowHeight = window.innerHeight;
+              if (paraTop < windowHeight - 100) {
+                setIsVisible(true);
+              }
             }
-        };
+          };
 
         window.addEventListener('scroll', handleScroll);
         handleScroll();
@@ -24,9 +21,10 @@ export default function About({title,content}){
     }, []);
 
     return(
-    <div className='about' id="about">
-        <h2 className="about_title">{title}</h2>
-        <p className={`para ${isVisible ? 'visible' : ''}`}>{content}</p>
+    <div className='flex flex-col items-center' id="about">
+        <h2 className="p-5 text-3xl mt-12 mb-0">{title}</h2>
+        <p className={`para w-9/12 border-b border-l p-5 text-xl mt-0 transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+        {content}</p>
     </div>
     )
 }
