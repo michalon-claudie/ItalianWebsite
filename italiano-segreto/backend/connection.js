@@ -1,7 +1,9 @@
-import mysql from 'mysql2';
-import dotenv from 'dotenv';
+const mysql = require('mysql2');
+const dotenv = require('dotenv');
 
 dotenv.config();
+
+console.log(DB_USER)
 
 const connection = mysql.createConnection({
     host: process.env.DB_HOST,
@@ -18,6 +20,6 @@ connection.connect((error) => {
   console.log('Connected to the database.');
 });
 
-export default connection;
+module.exports=connection;
 
 //new password for db after expose // 
