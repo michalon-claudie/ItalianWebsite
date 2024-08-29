@@ -14,11 +14,6 @@ export default function Footer(){
             <a href="a-propos.html">À propos</a>
             <a href="Contact.html">Contact</a>
         </div>
-        <div className="footer_block">
-            <h2 className="titre-quisuisje">Qui suis-je ?</h2>
-            <p>Anciennement infirmière, je me reconvertie dans un métier du web.
-            C'est grace à mes voyages et notamment à mon immersion en Italie que j'ai réussi à m'épanouir.</p>
-        </div>
     </footer>
     )
 }
