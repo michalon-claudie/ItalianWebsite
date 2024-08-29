@@ -10,6 +10,9 @@
         width:100%;
         transition:transform 1s;
         position:relative;
+        @media screen and (min-width: 1200px) {
+            width:40%;
+        }
         .fileTitle {
             display: none;
             position: absolute;
