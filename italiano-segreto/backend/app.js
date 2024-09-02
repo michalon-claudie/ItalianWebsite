@@ -22,19 +22,6 @@ app.get('/users', (req, res) => {
   });
 });
 
-app.post('/users', (req, res) => {
-  const { name, email } = req.body;
-  const sql = 'INSERT INTO users (name, email) VALUES (?, ?)';
-
-  db.query(sql, [name, email], (err, result) => {
-    if (err) {
-      console.error('Erreur lors de l\'ajout de l\'utilisateur:', err);
-      res.status(500).json({ error: 'Erreur lors de l\'ajout de l\'utilisateur' });
-    } else {
-      res.status(201).json({ message: 'Utilisateur ajouté avec succès', userId: result.insertId });
-    }
-  });
-});
 
 app.listen(port, () => {
   console.log(`Serveur Express en écoute sur le port ${port}`);

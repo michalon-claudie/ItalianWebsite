@@ -7,7 +7,7 @@ export default function Social(){
     return(
         <div className='flex flex-row items-center justify-between m-5'>
             <div className="flex gap-px md:gap-4">
-                <a className= "w-[4%] md:w-[7%] transition-transform duration-500 hover:transform hover:-translate-y-1" href="https://www.instagram.com/ita.lie.per.tutti/?next=%2F" target="_blank" aria-label="lien vers facebook">
+                <a className= "w-3/12 md:w-[7%] transition-transform duration-500 hover:transform hover:-translate-y-1" href="https://www.instagram.com/ita.lie.per.tutti/?next=%2F" target="_blank" aria-label="lien vers facebook">
                     <img className='w-full'src={imgFB} alt='Facebook'/>
                 </a>
                 <a className= "w-[4%] md:w-[7%] transition-transform duration-500 hover:transform hover:-translate-y-1" href="https://www.instagram.com/ita.lie.per.tutti/?next=%2F" target="_blank" aria-label="lien vers instagram">
