@@ -36,7 +36,6 @@ export default function Social() {
                     </a>
                 ))}
             </div>
-            <FontAwesomeIcon icon={faFacebook} />
             <div className="mail">
                 <a className="transition-transform duration-500 hover:transform hover:-translate-y-1"
                     href="MAILTO:clodiedie@hotmail.fr"
