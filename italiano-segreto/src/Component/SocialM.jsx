@@ -1,29 +1,23 @@
 import React from 'react';
-import imgFB from '../Images/fb.jpg';
-import insta from '../Images/insta.webp';
-import linkdin from '../Images/linkdIn.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export default function Social() {
 
     const socialLinks = [
         {
             href: "https://www.instagram.com/ita.lie.per.tutti/?next=%2F",
-            imgSrc: imgFB,
-            alt: "Facebook",
+            icon: faFacebook,
             ariaLabel: "link facebook"
         },
         {
             href: "https://www.instagram.com/ita.lie.per.tutti/?next=%2F",
-            imgSrc: insta,
-            alt: "Instagram",
+            icon: faInstagram,
             ariaLabel: "link instagram"
         },
         {
             href: "https://www.linkedin.com/in/claudie-michalon-8b1a0422a/",
-            imgSrc: linkdin,
-            alt: "LinkedIn",
+            icon: faLinkedin,
             ariaLabel: "link LinkedIn"
         }
     ];
@@ -38,16 +32,16 @@ export default function Social() {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label={link.ariaLabel}><img className='w-full' src={link.imgSrc} alt={link.alt} />
+                        aria-label={link.ariaLabel}><FontAwesomeIcon icon={link.icon} size="2x"/>
                     </a>
                 ))}
             </div>
+            <FontAwesomeIcon icon={faFacebook} />
             <div className="mail">
                 <a className="transition-transform duration-500 hover:transform hover:-translate-y-1"
                     href="MAILTO:clodiedie@hotmail.fr"
                     aria-label='Envoyer moi un mail'>Scrivimi</a>
             </div>
-            <FontAwesomeIcon icon={faCoffee} />
         </div>
     );
 }
