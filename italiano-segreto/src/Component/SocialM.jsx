@@ -2,6 +2,8 @@ import React from 'react';
 import imgFB from '../Images/fb.jpg';
 import insta from '../Images/insta.webp';
 import linkdin from '../Images/linkdIn.webp';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 export default function Social() {
 
@@ -45,6 +47,7 @@ export default function Social() {
                     href="MAILTO:clodiedie@hotmail.fr"
                     aria-label='Envoyer moi un mail'>Scrivimi</a>
             </div>
+            <FontAwesomeIcon icon={faCoffee} />
         </div>
     );
 }
