@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function Social() {
 
@@ -19,6 +20,11 @@ export default function Social() {
             href: "https://www.linkedin.com/in/claudie-michalon-8b1a0422a/",
             icon: faLinkedin,
             ariaLabel: "link LinkedIn"
+        },
+        {
+            href: "MAILTO:clodiedie@hotmail.fr",
+            icon: faEnvelope,
+            ariaLabel: 'Envoyer moi un mail'
         }
     ];
 
@@ -35,11 +41,6 @@ export default function Social() {
                         aria-label={link.ariaLabel}><FontAwesomeIcon icon={link.icon} size="2x"/>
                     </a>
                 ))}
-            </div>
-            <div className="mail">
-                <a className="transition-transform duration-500 hover:transform hover:-translate-y-1"
-                    href="MAILTO:clodiedie@hotmail.fr"
-                    aria-label='Envoyer moi un mail'>Scrivimi</a>
             </div>
         </div>
     );
