@@ -29,12 +29,12 @@ export default function Social() {
     ];
 
     return (
-        <div className='flex flex-row items-center justify-between m-5'>
-            <div className="flex gap-px md:gap-4">
+        <div className='flex'>
+            <div className="flex gap-5">
                 {socialLinks.map((link, index) => (
                     <a
                         key={index}
-                        className={`w-3/12 md:w-[7%] transition-transform duration-500 hover:transform hover:-translate-y-1`}
+                        className={`w-3/12 transition-transform duration-500 hover:transform hover:-translate-y-1`}
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
