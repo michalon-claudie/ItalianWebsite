@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        customPurple: '#ebceeb',
+      },
       fontFamily: {
         parisienne: ['Parisienne', 'cursive'],
       },
