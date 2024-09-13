@@ -1,0 +1,13 @@
+.contact .mail a {
+  display: block;
+  color: #e0b4e0;
+  font-weight: bold;
+  border: solid 2px #ccf2ff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(204, 242, 255, 0.7);
+  padding: 17px;
+  font-size: 17px;
+}
+.contact .mail a:hover {
+  color: black;
+}/*# sourceMappingURL=Header.css.map */

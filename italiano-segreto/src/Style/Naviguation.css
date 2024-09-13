@@ -1,0 +1,25 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.navigation .nav-item {
+  border-bottom: solid 3px #ccf2ff;
+  border-radius: 10px;
+  box-shadow: 6px 6px 15px rgba(204, 242, 255, 0.3);
+  text-align: center;
+  padding: 15px;
+  color: rgb(121, 121, 218);
+}
+.navigation .nav-item a {
+  font-size: 20px;
+}
+.navigation .nav-item:hover {
+  border-left: black 5px;
+  border-bottom: black 5px;
+}/*# sourceMappingURL=Naviguation.css.map */
