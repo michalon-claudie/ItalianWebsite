@@ -15,3 +15,5 @@ CREATE TABLE pictures(
     title VARCHAR(100),
     picture VARCHAR(900)
 );
+
+UPDATE pictures SET picture ="https://res.cloudinary.com/du1aihx1l/image/upload/v1726482761/firenze_ctlbe4.jpg" WHERE id="1";
