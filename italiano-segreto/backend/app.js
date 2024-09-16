@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
   res.send('Hello from the backend!');
 });
 
-app.get('/users', (req, res) => {
+app.get('/', (req, res) => {
   const sql = 'SELECT * FROM users';
   
   db.query(sql, (err, results) => {

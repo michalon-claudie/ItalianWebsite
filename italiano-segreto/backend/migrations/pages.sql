@@ -9,3 +9,9 @@ CREATE TABLE articles(
     picture VARCHAR(400),
     text VARCHAR(900)
 );
+
+CREATE TABLE pictures(
+    id INT PRIMARY KEY NOT NULL,
+    title VARCHAR(100),
+    picture VARCHAR(900)
+);
