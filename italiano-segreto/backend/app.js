@@ -18,7 +18,6 @@ app.get('/api/images/:id', (req, res) => {
     } else {
       res.status(404).json({ message: 'Image not found' });
     }
-    res.json(result[0]); 
   });
 });
 
