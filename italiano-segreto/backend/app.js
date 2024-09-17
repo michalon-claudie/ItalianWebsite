@@ -5,24 +5,24 @@ const port = 3001;
 
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.send('Hello from the backend!');
-});
+app.get('/api/images/:id', (req, res) => {
+  const imageId = req.params.id;
+  const sql = 'SELECT picture FROM pictures WHERE id = ?';
 
-app.get('/', (req, res) => {
-  const sql = 'SELECT * FROM users';
-  
-  db.query(sql, (err, results) => {
+  db.query(sql, [imageId], (err, result) => {
     if (err) {
-      console.error('Erreur lors de la récupération des utilisateurs:', err);
-      res.status(500).json({ error: 'Erreur lors de la récupération des utilisateurs' });
-    } else {
-      res.json(results);
+      return res.status(500).send(err);
     }
+    if (result.length > 0) {
+      res.json(result[0]);  // Envoie l'URL au front-end
+    } else {
+      res.status(404).json({ message: 'Image not found' });
+    }
+    res.json(result[0]); 
   });
 });
 
 
 app.listen(port, () => {
-  console.log(`Serveur Express en écoute sur le port ${port}`);
+  console.log(`Express's server listening to port ${port}`);
 });
