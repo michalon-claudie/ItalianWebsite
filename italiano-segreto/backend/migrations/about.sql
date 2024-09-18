@@ -1,0 +1,10 @@
+CREATE TABLE about(
+    id INT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    pictureAbout VARCHAR(900),
+    paragrapheAbout VARCHAR(700),
+    linkRecipe VARCHAR(255),
+    link_wordRecipe VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
