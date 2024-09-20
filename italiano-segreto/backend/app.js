@@ -5,19 +5,15 @@ const port = 3001;
 
 app.use(express.json());
 
-app.get('/api/images/:id', (req, res) => {
-  const imageId = req.params.id;
-  const sql = 'SELECT picture FROM pictures WHERE id = ?';
+app.get('/api/cities', (req, res) => {
+  const sql = 'SELECT * FROM cities';
 
-  db.query(sql, [imageId], (err, result) => {
+  db.query(sql, [], (err, result) => {
     if (err) {
-      return res.status(500).send(err);
+      return res.status(500).json({ error: 'Database query error' });
     }
-    if (result.length > 0) {
-      res.json(result[0]);  // Envoie l'URL au front-end
-    } else {
-      res.status(404).json({ message: 'Image not found' });
-    }
+    console.log('Query result:', result);
+    res.json(result);
   });
 });
 

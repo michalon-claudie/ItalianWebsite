@@ -14,10 +14,7 @@ export default function Navigation() {
     return (
         <nav className="navigation" >
             <NavItem href="/" label="Home" />
-            <NavItem href="lamiastoria.html" label="La mia storia" anchor="about"/>
-            <NavItem href="/Firenze" label="Firenze" />
-            <NavItem href="Ricetta.html" label="Ricette" />
-            <NavItem href="Contact.html" label="Contact" />
+            <NavItem href="/CitiesPage" label="Cities" />
         </nav>
     );
 }

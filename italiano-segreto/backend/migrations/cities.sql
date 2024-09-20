@@ -32,3 +32,8 @@ CREATE TABLE cities (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
+INSERT INTO cities(id,title,pictureBanner,paragraphe,secondPicture,paragraphe2,link,link_word)
+VALUES 
+('1','Florence','pictureBanner','hello florence','secondpicture','ca va florence','link',"link word"),
+('2','Rome','pictureBanner','hello rome','secondpicture','ca va rome','link',"link word")
+; 
