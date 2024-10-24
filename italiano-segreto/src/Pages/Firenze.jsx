@@ -6,12 +6,13 @@ import Naviguation from '../Component/Naviguation'
 import Article from '../Component/Article'
 import FirenzePicture from '../Images/firenze.jpg'
 import Footer from '../Component/Footer'
+import imageGeneralBanner from '../Images/Venise3.jpg'
 
 export default function Firenze() {
     return (
         <main>
             <Header/>
-            <Banner text="Firenze"/>
+            <Banner imageUrl={imageGeneralBanner} text="Firenze"/>
             <Naviguation/>
             <Article title="La sublime" picture={FirenzePicture} text="Florence c'est trop chouette"/>
             <Footer/>

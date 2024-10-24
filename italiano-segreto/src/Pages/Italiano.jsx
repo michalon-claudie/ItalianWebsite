@@ -6,12 +6,13 @@ import Naviguation from '../Component/Naviguation'
 import About from '../Component/About'
 import Files from '../Component/Files'
 import Footer from '../Component/Footer'
+import imageGeneralBanner from '../Images/Venise3.jpg'
 
 export default function Italiano() {
     return (
         <main>
             <Header/>
-            <Banner text="Benvenuto"/>
+            <Banner imageUrl={imageGeneralBanner} text="Benvenuto"/>
             <Naviguation/>
             <About
                 title="Pourquoi ce site ?"

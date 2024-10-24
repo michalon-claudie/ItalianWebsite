@@ -4,21 +4,6 @@ body
     font-family: 'Geologica', sans-serif;
 
 }
-.banniere
-{
-    background-image: url(../Images/Venise3.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    padding:100px;   
-}
-.banniere p
-{
-    color:white;
-    text-align:start;
-    font-style: italic;
-    font-size: 30px;
-}
-
 
 .photo-menu
 {
