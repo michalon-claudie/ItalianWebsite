@@ -9,7 +9,7 @@ export default function Files(){
                     <div key={completeFiles.id} className='w-full transition-transform duration-1000 relative md:w-2/5 hover:scale-110 hover:brightness-50'>
                         <Link className="flex w-full" to={`/${completeFiles.title}`}>
                             <img className='w-full h-72' src={completeFiles.cover} alt={completeFiles.title}/>
-                            <span className='hidden absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-1 hover:block'>{completeFiles.title}</span>
+                            <span className='absolute bottom-0 left-0 right-0 bg-black bg-opacity-70 text-white p-1'>{completeFiles.title}</span>
                         </Link>
                     </div>
                 ))}
